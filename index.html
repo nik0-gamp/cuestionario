@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario accesible</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear cuenta</h1>
+
+        <form>
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" aria-required="true" required>
+                <p class="error"></p>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" aria-required="true" required>
+                <p class="error"></p>
+            </div>
+
+            <div class="campo">
+                <label for="contrasena">Contraseña</label>
+                <div class="contrasena">
+                    <input type="password" id="contrasena" name="contrasena" aria-required="true" required>
+                    <button type="button" aria-label="Mostrar contraseña">◉</button>
+                </div>
+                <p class="error"></p>
+            </div>
+
+            <div class="campo">
+                <label for="confirmar">Confirmar contraseña</label>
+                <input type="password" id="confirmar" name="confirmar" aria-required="true" required>
+                <p class="error"></p>
+            </div>
+
+            <div class="progreso">
+                <p>Seguridad de la contraseña</p>
+                <div class="barra">
+                    <div class="nivel"></div>
+                </div>
+                <p class="porcentaje">65%</p>
+            </div>
+
+            <div class="requisitos">
+                <p>La contraseña debe tener:</p>
+                <p>✓ Al menos 8 caracteres</p>
+                <p>✓ Una letra mayúscula</p>
+                <p>✓ Una letra minúscula</p>
+                <p>○ Un número</p>
+                <p>○ Un carácter especial</p>
+            </div>
+
+            <div class="completado">
+                <div class="aro">
+                    <div class="centro">
+                        <p>75%</p>
+                    </div>
+                </div>
+                <p>Cuestionario completado</p>
+            </div>
+
+            <button type="submit" class="registrar">Crear cuenta</button>
+        </form>
+    </div>
+</body>
+</html>

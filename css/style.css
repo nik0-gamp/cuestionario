@@ -1,0 +1,145 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    margin: 30px;
+}
+
+.container{
+    padding: 30px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input{
+    padding: 12px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: solid 2px royalblue;
+    border-color: royalblue;
+}
+
+.contrasena{
+    display: flex;
+}
+
+.contrasena input{
+    width: 100%;
+}
+
+.contrasena button{
+    width: 45px;
+    border: solid 1px gray;
+    background-color: white;
+    cursor: pointer;
+}
+
+.progreso{
+    margin-top: 20px;
+}
+
+.barra{
+    width: 100%;
+    height: 8px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.nivel{
+    width: 65%;
+    height: 8px;
+    background-color: seagreen;
+    border-radius: 10px;
+}
+
+.porcentaje{
+    text-align: right;
+    font-size: 14px;
+}
+
+.requisitos{
+    padding: 10px;
+    background-color: #f0f2f5;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.completado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.aro{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: conic-gradient(seagreen 0% 75%, lightgray 75% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.completado > p{
+    font-weight: bold;
+}
+
+.registrar{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.registrar:hover{
+    background-color: darkblue;
+}
+
